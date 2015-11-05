@@ -415,7 +415,7 @@ class SwiftLexer(RegexLexer):
             (words((
                 'break', 'case', 'continue', 'default', 'do', 'else',
                 'fallthrough', 'for', 'if', 'in', 'return', 'switch', 'where',
-                'while'), suffix=r'\b'),
+                'while', 'guard', 'defer'), suffix=r'\b'),
              Keyword),
             (r'@availability\([^)]+\)', Keyword.Reserved),
             (words((
@@ -426,7 +426,7 @@ class SwiftLexer(RegexLexer):
                 'unowned', 'weak', 'willSet', '@availability', '@autoclosure',
                 '@noreturn', '@NSApplicationMain', '@NSCopying', '@NSManaged',
                 '@objc', '@UIApplicationMain', '@IBAction', '@IBDesignable',
-                '@IBInspectable', '@IBOutlet'), suffix=r'\b'),
+                '@IBInspectable', '@IBOutlet', '@noescape'), suffix=r'\b'),
              Keyword.Reserved),
             (r'(as|dynamicType|false|is|nil|self|Self|super|true|__COLUMN__'
              r'|__FILE__|__FUNCTION__|__LINE__|_)\b', Keyword.Constant),
@@ -440,7 +440,8 @@ class SwiftLexer(RegexLexer):
             (words((
                 'class', 'deinit', 'enum', 'extension', 'func', 'import', 'init',
                 'internal', 'let', 'operator', 'private', 'protocol', 'public',
-                'static', 'struct', 'subscript', 'typealias', 'var'), suffix=r'\b'),
+                'static', 'struct', 'subscript', 'typealias', 'var',
+                'indirect'), suffix=r'\b'),
              Keyword.Declaration)
         ],
         'comment': [
