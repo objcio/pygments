@@ -17,7 +17,7 @@ __all__ = ['ObjcioHtmlFormatter']
 class ObjcioHtmlFormatter(HtmlFormatter):
 
     name = 'objcio'
-    aliases = []
+    aliases = ['objcio']
     filenames = ['*.html', '*.htm']
 
     def __init__(self, **options):

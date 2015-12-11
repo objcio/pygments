@@ -17,7 +17,7 @@ __all__ = ['ObjcioEpubHtmlFormatter']
 class ObjcioEpubHtmlFormatter(HtmlFormatter):
 
     name = 'objcio-epub'
-    aliases = []
+    aliases = ['objcio-epub']
     filenames = ['*.html', '*.htm']
 
     def __init__(self, **options):
