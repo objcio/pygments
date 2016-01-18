@@ -365,7 +365,7 @@ LEXERS = {
     'SspLexer': ('pygments.lexers.templates', 'Scalate Server Page', ('ssp',), ('*.ssp',), ('application/x-ssp',)),
     'StanLexer': ('pygments.lexers.modeling', 'Stan', ('stan',), ('*.stan',), ()),
     'SuperColliderLexer': ('pygments.lexers.supercollider', 'SuperCollider', ('sc', 'supercollider'), ('*.sc', '*.scd'), ('application/supercollider', 'text/supercollider')),
-    'SwiftLexer': ('pygments.lexers.objective', 'Swift', ('swift',), ('*.swift',), ('text/x-swift',)),
+    'SwiftLexer': ('pygments.lexers.objective', 'Swift', ('swift','highlight-swift',), ('*.swift',), ('text/x-swift',)),
     'SwigLexer': ('pygments.lexers.c_like', 'SWIG', ('swig',), ('*.swg', '*.i'), ('text/swig',)),
     'SystemVerilogLexer': ('pygments.lexers.hdl', 'systemverilog', ('systemverilog', 'sv'), ('*.sv', '*.svh'), ('text/x-systemverilog',)),
     'TAPLexer': ('pygments.lexers.testing', 'TAP', ('tap',), ('*.tap',), ()),
